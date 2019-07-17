@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Source+Sans+Pro:400,600,700');
+
+:root {
+    --blue: #354e66;
+    --light-blue: #9bb6cc;
+}
+
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.up {
+    height: 63px;
+    color: var(--blue);
+    display: flex;
+}
+
+    .logo {
+        width: 249px;
+        padding: 20px 40px 24px 41px;
+        display: flex;
+    }
+    
+    .logoimg {
+        position: relative;
+        top: 2px;
+        padding-right: 8px;
+    }
+    
+    .smart > h1 {
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        display: block;
+        line-height: 33px;
+        position: relative;
+        bottom: 3px;
+    }
+    
+    .buttons > a {
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--blue);
+        line-height: 44px;
+        padding: 8px 29px 9px 21px;
+        font-weight: 700;
+        letter-spacing: 0.32px;
+    }
+    
+    .buttons > a:hover, .fselected {
+        border-bottom: 2px solid var(--blue);
+    }
+    
+.main {
+    display: flex;
+}
+    
+    .sidebar {
+        width: 249px;
+        height: 100%;
+        background-color: var(--blue);
+        color: var(--light-blue);
+        display: flex;
+        flex-direction: column;
+    }
+    
+        .userpic {
+            padding: 36px 84px 17px 81px;
+        }
+        
+        .cuser {
+            font-size: 16px;
+            text-align: center;
+        }
+        
+        .fbutton {
+            text-decoration: none;
+            color: var(--blue);
+            padding: 14px 38px 16px 40px;
+            margin: 26px 44px 38px 41px;
+            background-color: #fff;
+            border-radius: 2px;
+            font-weight: 600;
+        }
+        
+        .def {
+            display: flex;
+            align-content: space-between;
+            flex-direction: column;
+        }
+        
+            .sbuttons > a {
+                text-decoration: none;
+                color: var(--light-blue);
+                display: block;
+                padding: 14px 0px 14px 33px;
+            }
+            
+                .sbuttons > a:hover, .sbuttons > .selected {
+                    color: #fff;
+                }
+            
+            .selected {
+                background-color: rgba(255, 255, 255, 0.05);
+                border-left: 2px solid #fff;
+            }
+            
+            .logout > a {
+                display: block;
+                text-decoration: none;
+                color: var(--light-blue);
+                padding: 100px 0px 30px 33px;
+            }
+            
+        .content {
+            display: flex;
+        }
+            
+            .leftt, .rightt {
+              margin: 38px 44px 0 58px; 
+              border-radius: 2px;
+            }
+                
+                .upper {
+                    width: 520px;
+                    height: 180px;
+                    margin-bottom: 39px;
+                }
+                
+                .inbox {
+                    display: flex;
+                    background-color: #f8f9fa;
+                }
+                
+                    .inbox > i {
+                        font-size: 24px;
+                        padding: 13px 8px 9px 16px;
+                    }
+                    
+                    .inbox > h2 {
+                        color: #343a40;
+                        font-size: 18px;
+                        padding: 13px 0px 9px 0px;
+                    }
+                
+                .par {
+                    padding: 25px 45px 17px 30px;
+                    font-size: 14px;
+                    color: #343a40;
+                }
+            
+                .upper > a {
+                    text-decoration: none;
+                    font-size: 14px;
+                    text-color: #364fc7;
+                    padding-left: 31px;
+                    font-weight: 600px;
+                }
+                
+            .pictures {
+                display: flex;
+            }
+                
+                .pic, .upper, .vico, .daily {
+                    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.1);
+                }
+                
+                    .pic > h1 {
+                        font-size: 16px;
+                        color: #343a40;
+                        font-weight: 400;
+                        padding: 20px;
+                    }
+                    
+                #fpic {
+                    margin-right: 42px;
+                }
+                
+            .upper2 {
+                display: flex;
+                height: 91px;
+            }
+            
+                #fvc {
+                    margin-right: 40px;
+                }
+                
+                .vico {
+                    display: flex;
+                    width: 240px;
+                }
+                
+                    #fvc > i {
+                        font-size: 40px;
+                        padding: 30px 26px 21px 27px;
+                        background-color: #9775fa;
+                        color: #fff;
+                    }
+                    
+                    .vico > i {
+                        font-size: 31px;
+                        padding: 31px 26px 29px 29px;
+                        background-color: #20c997;
+                        color: #fff;
+                    }
+                    
+                    .con {
+                        padding: 10px 0px 14px 22px;
+                    }
+                    
+                        .con > h1 {
+                            font-weight: 400;
+                            font-size: 36px;
+                        }
+                        
+                        .con > h2 {
+                            font-weight: 400;
+                            font-size: 16px;
+                            color: #727c85;
+                        }
+                        
+            .daily {
+                margin-top: 43px;
+                width: 520px;
+                height: 400px;
+            }
+            
+                .daily > h1 {
+                    padding: 36px 0 21px 38px;
+                    font-size: 14px;
+                }
+            
+                .con2 {
+                    display: flex;
+                    padding-left: 24px;
+                }
+                
+                    .cont {
+                        display: flex;
+                    }
+                    
+                        .con2 > ul {
+                            position: relative;
+                            bottom: 15px;
+                        }
+                
+                            .cont > li {
+                                list-style-type: none;
+                                line-height: 22px;
+                                font-size: 14px;
+                            }
+                    
+                                .circle {
+                                    height: 13px;
+                                    width: 13px;
+                                    border-radius: 50%;
+                                    margin: 5px 5px 0 0;
+                                }
+                    
+                                #work {
+                                    background-color: #2b69cc;
+                                }
+                                    
+                                #eat {
+                                    background-color: #df3e0a;
+                                }
+                                    
+                                #commute {
+                                    background-color: #ff9700;
+                                }
+                                    
+                                #watch {
+                                    background-color: #00931b;
+                                }
+                                    
+                                #sleep {
+                                    background-color: #991d98;
+                                }

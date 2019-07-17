@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Notes App</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./css/index.css">
+        <link rel="stylesheet" type="text/css" href="./css/notes.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="content">
+                <div class="logo">
+                    <a href="/" title="Welcome">
+                        <img src="images/logo.svg"/>
+                    </a>
+                </div>
+                <input type="text" id="search" class="search" placeholder="Search...">
+                <div class="styled-select">
+                    <select name="order">
+                        <option value="modified_desc">Modified DESC</option>
+                        <option value="modified_asc">Modified ASC</option>
+                        <option value="created_desc">Created DESC</option>
+                        <option value="created_asc">Created ASC</option>
+                    </select>
+                </div>
+                <div class="nav">
+                    <a href="/logout.html" title="Logout" class="logout">
+                        <i class="fas fa-sign-out-alt"></i>Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+        <main class="fixed-width">
+            <form id="new-note">
+                <input type="text" name="title" id="title-input" placeholder="Title">
+                <textarea name="content" id="content-input" placeholder="Take a note..."></textarea>
+                <input type="file" name="image" id="image">
+                <div class="toolbox">
+                    <div class="left">
+                        <i class="fas fa-palette"></i>
+                        <label for="image">
+                        <i class="fas fa-image"></i>
+                        </label>
+                    </div>
+                    <div class="right">
+                        <input type="submit" id="submit" value="Save notes">
+                    </div>
+                </div>
+            </form>
+            <h2>PINNED</h2>
+            <div id="zero" class="note">
+                <img src="images/note-img.png"/>
+                <h3>Projects & Companies using serverless-chrome</h3>
+                <p>Using AWS Lambda, the quickest way to get started is with the Serverless-framework CLI.
+                    <br/><br/>
+                    First, install serverless globally (npm install -g serverless) and then:
+                    <br/><br/>
+                    serverless create -u https://github.com/adieuadieu/serverless-chrome/tree/master/examples/serverless-framework/aws
+                    Then, you must configure your AWS credentials either by defining AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY environmental variables, 
+                    or using an AWS profile. You can read more about this on the Serverless Credentials Guide.
+                </p>
+                <input type="file" name="image" id="image">
+                <div class="toolbox">
+                    <div class="left">
+                        <i class="fas fa-pen"></i>
+                        <i class="fas fa-palette"></i>
+                        <label for="image">
+                        <i class="fas fa-image"></i>
+                        </label>
+                        <i class="fas fa-trash"></i>
+                    </div>
+                    <div class="right">
+                        <i class="fas fa-thumbtack"></i>
+                    </div>
+                </div>
+            </div>
+            <h2>OTHERS</h2>
+            <div id="one" class="note">
+                <h3>Projects & Companies using serverless-chrome</h3>
+                <p>Using AWS Lambda, the quickest way to get started is with the Serverless-framework CLI.
+                    <br/><br/>
+                    First, install serverless globally (npm install -g serverless) and then:
+                    <br/><br/>
+                    serverless create -u https://github.com/adieuadieu/serverless-chrome/tree/master/examples/serverless-framework/aws
+                    Then, you must configure your AWS credentials either by defining AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY environmental variables, 
+                    or using an AWS profile. You can read more about this on the Serverless Credentials Guide.
+                </p>
+                <input type="file" name="image" id="image">
+                <div class="toolbox">
+                    <div class="left">
+                        <i class="fas fa-pen"></i>
+                        <i class="fas fa-palette"></i>
+                        <label for="image">
+                        <i class="fas fa-image"></i>
+                        </label>
+                        <i class="fas fa-trash"></i>
+                    </div>
+                    <div class="right">
+                        <i class="fas fa-thumbtack"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="two" class="note">
+                <h3>Projects & Companies using serverless-chrome</h3>
+                <p>Using AWS Lambda, the quickest way to get started is with the Serverless-framework CLI.
+                    <br/><br/>
+                    First, install serverless globally (npm install -g serverless) and then:
+                    <br/><br/>
+                    serverless create -u https://github.com/adieuadieu/serverless-chrome/tree/master/examples/serverless-framework/aws
+                    Then, you must configure your AWS credentials either by defining AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY environmental variables, 
+                    or using an AWS profile. You can read more about this on the Serverless Credentials Guide.
+                </p>
+                <input type="file" name="image" id="image">
+                <div class="toolbox">
+                    <div class="left">
+                        <i class="fas fa-pen"></i>
+                        <i class="fas fa-palette"></i>
+                        <label for="image">
+                        <i class="fas fa-image"></i>
+                        </label>
+                        <i class="fas fa-trash"></i>
+                    </div>
+                    <div class="right">
+                        <i class="fas fa-thumbtack"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="three" class="note">
+                <h3>Projects & Companies using serverless-chrome</h3>
+                <p>Using AWS Lambda, the quickest way to get started is with the Serverless-framework CLI.</p>
+                <input type="file" name="image" id="image">
+                <div class="toolbox">
+                    <div class="left">
+                        <i class="fas fa-pen"></i>
+                        <i class="fas fa-palette"></i>
+                        <label for="image">
+                        <i class="fas fa-image"></i>
+                        </label>
+                        <i class="fas fa-trash"></i>
+                    </div>
+                    <div class="right">
+                        <i class="fas fa-thumbtack"></i>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div id="footer">
+            <div class="content">
+                <img src="images/logo2.svg">
+                <div>
+                    &copy 2019 SmartNotes Technologies
+                    <br id="brk"/>
+                    <span id="bl">|</span> <a href="/security.html">Security</a> 
+                    <span>|</span> <a href="/your-privacy.html">Your Privacy</a> 
+                    <span>|</span> <a href="/terms.html">Terms</a>
+                    <br/>
+                    SmartNotes was created using SmartNotes
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

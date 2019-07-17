@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #1d1d1d;
+    letter-spacing: 0;
+}
+
+p, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #624fe0;
+    font-size: 16px;
+}
+
+
+.content {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1150px;
+    padding:0 20px;
+}
+
+#header {
+    background-color: #624fe0;
+    padding: 36px 0;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+}
+
+    #header .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        width: 161px;
+        flex: 0 0 auto;
+    }
+    
+        .nav a {
+            color: #fff;
+            font-size: 18px;
+        }
+        
+        .nav a:hover {
+            opacity: 0.6;
+        }
+
+    .logo a {
+        display: inline-block;
+    }
+    
+#main {
+    
+}
+
+    #main .content {
+        padding-top: 18px;
+    }
+
+    .section-jumbotron {
+        padding-top: 112px;
+        background-color: #624fe0;
+        height: 652px;
+    }
+    
+        h1 {
+            font-weight: 600;
+            font-size: 48px;
+            color: #fff;
+            text-align: center;
+        }
+        
+            h1 span {
+                color: #c8bcff;
+            }
+            
+        .manage-notes {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+            .smart-notes {
+                max-width: 50%;
+                margin-top: 10px;
+            }
+            
+                .smart-notes h3 {
+                    color: #fff;
+                    font-size: 30px;
+                    margin-left: 33px;
+                }
+                
+                .smart-notes ul {
+                    color: #fff;
+                    list-style-type: square;
+                    margin-bottom: 63px;
+                }
+            
+                    .smart-notes li {
+                        line-height: 26px;
+                    }
+                
+                .smart-notes a {
+                    display: block;
+                    background-color: #fff;
+                    width: 250px;
+                    height: 56px;
+                    border-radius: 3px;
+                    text-align: center;
+                    font-size: 22px;
+                    font-weight: 500;
+                    padding-top: 15px;
+                    margin-top: 80px;
+                    margin-left: 35px;
+                }
+            
+            .mobile-friendly {
+                padding-right: 80px;
+            }
+        
+    #join {
+        margin-top: 151px;
+        font-size: 28px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+        
+    #logos .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 53px;
+    }
+    
+        #google {
+            width: 115px;
+        }
+        
+        #airbnb {
+            width: 133px;
+        }
+        
+        #nike {
+            width: 84px;
+        }
+        
+        #samsung {
+            width: 117px;
+        }
+        
+        #uber {
+            width: 80px;
+        }
+    
+    #main-center .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 107px;
+    }
+    
+        #left {
+            margin-top: 26px;
+        }
+    
+            #left h3 {
+                font-size: 28px;
+                font-weight: 500;
+            }
+            
+            #left p, #left a {
+                line-height: 30px;
+            }
+            
+            #left a {
+                font-weight: 600;
+                font-size: 18px;
+            }
+        
+        #right {
+            position: relative;
+            left: 28px;
+        }
+        
+        
+#footer {
+    border-top: 1px solid #dad6e2;
+    background-color: #fff;
+}
+   
+    #footer .content {
+        height: 112px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 23px;
+        font-size: 16px;
+    }
+    
+        #brk {
+            display: none;
+        }
+    
+        #footer .content span {
+            color: #9d9d9d;
+        }
+        
+        #footer .content a {
+            color:#4357da;
+        }
+        
+@media screen and (max-width: 1200px) {
+    #right {
+        left: 0;
+    }
+    
+}
+
+@media screen and (max-width: 992px) {
+    .smart-notes ul {
+        margin-bottom: 0;
+    }
+        
+    .smart-notes a {
+        margin-top: 20px;
+    }
+    
+    .mobile-friendly {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-jumbotron {
+        height: 1050px;
+    }
+    
+        .manage-notes {
+            display: block;
+            text-align: center;
+        }
+        
+            .smart-notes {
+                max-width: 100%;
+            }
+            
+            #btn {
+                margin:auto;
+                width: 250px;
+            }
+            
+                .smart-notes a {
+                    margin-top: 60px;
+                    margin-bottom: 60px;
+                    margin-left: 0;
+                }
+                
+                
+    #main-center .content {
+        display: block;
+        text-align: center;
+    }
+    
+        #left {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+    
+        #right {
+            margin-left: 0;
+        }
+    
+    #footer .content {
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 120px;
+    }
+    
+        #brk {
+            display: inline;
+        }
+        
+        #bl {
+            display: none;
+        }
+    
+}

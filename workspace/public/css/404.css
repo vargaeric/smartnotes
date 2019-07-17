@@ -1,0 +1,32 @@
+body {
+    background-color:#624fe0;
+}
+
+#main2 {
+    padding-top: 130px;
+    text-align: center;
+    line-height: 54px;
+}
+
+
+ #main2 > h2 {
+     color: #fff;
+     font-size: 48px;
+ }
+ 
+ #main2 > img {
+    padding: 30px 0 30px 0;
+ }
+ 
+ .hbtn {
+    margin: 30px 0 80px 0;
+ }
+ 
+    .hbtn > a {
+        font-size: 16px;
+        color: #1d1d1d;
+        padding: 10px 30px;
+        font-weight: 500;
+        background-color: #fff;
+        border-radius: 3px;
+    }
